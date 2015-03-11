@@ -1,0 +1,281 @@
+@font-face { 
+	font-family: fastaction;
+    src: url('font/fastaction/fastaction.eot') format('embedded-opentype'),
+         url('font/fastaction/fastaction.woff') format('woff'),
+         url('font/fastaction/fastaction.ttf') format('truetype'),
+         url('font/fastaction/fastaction.svg') format('svg');
+}
+@font-face { 
+	font-family: gravity;
+    src: url('font/gravity/gravity.eot') format('embedded-opentype'),
+         url('font/gravity/gravity.woff') format('woff'),
+         url('font/gravity/gravity.ttf') format('truetype'),
+         url('font/gravity/gravity.svg') format('svg');
+}
+html, body{
+	width:100%;
+}
+body{
+	margin:0;
+	padding:0;
+	background-image:url(img/fond.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+	font-family: gravity,Arial,sans-serif;
+}
+#wrapper{
+	width: 80%;
+	min-width: 900px;
+	margin:auto;
+}
+header{
+	width:100%;
+	height:160px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+#plogo{
+	float:left;
+	width:50%;
+}
+#lf{
+	margin:auto;
+	width:300px;
+}
+#dlogo{
+	width:250px;
+	height:140px;
+	left:0;
+}
+#dlogo img{
+	width:100%;
+	height:100%;
+}
+#content{
+	width:100%;
+}
+h1{
+	width:100%;
+	text-align:center;
+	color:#FFF;
+	font-family: fastaction,Arial,sans-serif;
+}
+section{
+	width:100%;
+	margin-top:35px;
+}
+#haut{
+	height:200px;
+}
+#bas{
+	height:300px;
+}
+.lfloat, .rfloat{
+	width:50%;
+	height:100%;
+}
+.lfloat{
+	float:left;
+	left:0;
+}
+.rfloat{
+	float:right;  
+}
+#btn{
+	width:200px;
+	margin:auto;
+	height:110px;
+	padding-top:5px;
+}
+button{ 
+	font-family: Arial,sans-serif; 
+	font-size: 1.6em; 
+	width: 100px; 
+	height: 100px;
+	text-align: center; 
+	color: #FFF; 
+	background-color: #000;
+	border-radius:50%;
+	margin-left:50px;
+	cursor:pointer;  
+}
+button:hover{
+	width:110px;
+	height:110px;
+	margin-left:45px;
+	font-size: 1.7em;
+	color:hsla(359,100%,23%,1.00); 
+}
+button:active{
+	width:100px;
+	height:100px;
+	margin-left:50px;
+	font-size: 1.6em;
+	color:green;
+}
+.bloc{
+	width:300px;
+	height:100%;
+	margin:auto; 
+}
+#slideshow {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+	border:solid 4px #fff;
+	border-radius:15%;
+}
+#sContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+    margin: 0;            
+    padding: 0;
+    
+    /*CSS3 keyframes animation*/
+    animation-name: AutoSlide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#sContent li {
+    display: inline;
+	margin:0;
+	padding:0;
+}
+@keyframes AutoSlide {
+    0%, 15%, 100% {
+        left: 0px; /*1ère image*/
+    }
+    20%, 35% {
+        left: -305px; /*2ème image*/
+    }
+    40%, 55% {
+        left: -610px; /*3ème image*/
+    }
+	60%, 75% {
+        left: -910px; /*4ème image*/
+    }
+	80%, 95% {
+        left: -1215px; /*5ème image*/
+    }
+}
+#bloc_text{
+	background-color:#000;
+	border:solid 4px #fff;
+	border-radius:15%;
+}
+#bloc_text p{
+	width:250px;
+	margin:auto;
+	margin-top:25px;
+	font-size:14px;
+	color:#fff;
+}
+#video{
+	background-color:#fff;
+	padding-left:0.5%;
+	padding-top:0.5%;
+}
+#video:hover{
+	width:310px;
+	height:105%;
+	cursor:pointer;
+}
+#bloc_cercle{
+	width:300px;
+	height:300px;
+}
+#rondblc{
+	width:230px;
+	height:230px;
+	position:absolute;
+	margin: 35px 35px 35px 35px;
+	border:solid 4px #fff;
+	border-radius:50%;
+}
+#pttrnd{
+	z-index:50;
+	position:absolute;
+}
+.hb{
+	width:300px;
+	height:100px;
+}
+#lfl, #rfl{
+	width:100px;
+	height:100px;
+}
+#lfl{
+	float:left;
+	left:0;
+}
+#rfl{
+	float:right;
+}
+.ctr{
+	width:100px;
+	height:100px;
+	margin:auto;
+}
+.rnd img{
+	width:100%;
+	border-radius:50%;
+	border:solid 4px #fff;
+	cursor:pointer;
+	position:relative;
+}
+.rnd img:hover{
+	width:105%;
+	height:105%;
+}
+#bb{
+	margin-top: 60px;
+}
+#sep{
+	width:85%;
+	height:2px;
+	margin:auto; 
+	background-color:#FFF;
+}
+footer{
+	width:100%;
+	height:50px;
+}
+#copy{
+	width:50%;
+	color:white;
+	font-size:12px;
+	padding-top:18px;
+	float:left;
+	left:0; 
+} 
+#copy p{
+	width:300px;
+	margin:auto;
+}
+#brrs{
+	width:50%;
+	float:right;
+}
+#rs{
+	width:300px;
+	height:50px;
+	margin:auto;
+	padding-top:5px;
+}
+.icrs{
+	width:40px;
+	height:40px;
+	display:inline-block;
+	float:right;
+	margin-left:20px;
+	list-style-type:none;
+}
+.icrs img{
+	width:100%;
+	height:100%;
+}
